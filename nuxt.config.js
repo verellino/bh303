@@ -24,7 +24,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: SITE_INFO.sitename || process.env.npm_package_name || '',
+    title: SITE_INFO.sitename || process.env.npm_package_name || 'Harian Bola - Berita terupdate tentang Sepakbola 2021',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

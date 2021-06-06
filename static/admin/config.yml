@@ -1,5 +1,5 @@
-site_url: https://ntn-boilerplate.netlify.app/
-logo_url: https://ntn-boilerplate.netlify.app/icon.png
+site_url: https://harianbola.netlify.app/
+logo_url: https://harianbola.netlify.app/img/harianbola.png
 
 publish_mode: editorial_workflow
 backend:
@@ -63,6 +63,43 @@ collections:
           widget: 'select',
           default: 'animals',
           options: [{ label: 'Animals', value: 'animals' }, { label: 'Food', value: 'food' }],
+        }
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Description', name: 'description', widget: 'string', required: false }
+      - { label: 'Cover Image', name: 'cover', widget: 'image', required: false, allow_multiple: false }
+      - { label: 'Content', name: 'body', widget: 'markdown', required: false }
+      - {
+          label: 'Gallery',
+          name: 'gallery',
+          widget: 'list',
+          required: false,
+          summary: '{{fields.image}}',
+          field: { label: 'Image', name: 'image', widget: 'image' },
+        }
+  - name: 'bola'
+    label: 'Berita Bola'
+    label_singular: 'Bola'
+    folder: 'content/bola'
+    create: true
+    format: 'frontmatter'
+    slug: '{{slug}}'
+    preview_path: 'bola/{{slug}}'
+    fields:
+      - {
+          label: 'Bola Category',
+          name: 'category',
+          widget: 'select',
+          default: 'liga-champions',
+          options:
+            [
+              { label: 'Liga Champions', value: 'champions' },
+              { label: 'Liga Eropa', value: 'eropa' },
+              { label: 'Liga Inggris', value: 'inggris' },
+              { label: 'Liga Italia', value: 'italia' },
+              { label: 'Liga Spanyol', value: 'spanyol' },
+              { label: 'Liga Jerman', value: 'jerman' },
+              { label: 'Liga Indonesia', value: 'indonesia' },
+            ],
         }
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - { label: 'Description', name: 'description', widget: 'string', required: false }
