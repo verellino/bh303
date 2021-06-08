@@ -1,22 +1,25 @@
 <template>
-  <nav class="scrim-bg fixed z-40 top-0 inset-x-0 pt-3 px-6 flex justify-between" aria-label="Main Menu">
+  <nav class="scrim-bg fixed z-40 top-0 inset-x-0 pt-3 px-6 flex justify-between items-center" aria-label="Main Menu">
     <a href="/" class="w-20">
-      <img src="/img/harianbola.png" alt="HarianBola">
+      <img src="/img/dailybola.png" alt="HarianBola">
     </a>
-    <ul class= "flex">
-      <li class="">
-        <nuxt-link class="block" to="/">Home</nuxt-link>
-      </li>
-      <li class="ml-4">
-        <nuxt-link class="block" to="/bola">Berita Bola</nuxt-link>
-      </li>
-    </ul>
+    <div class="drawer-toggle" role="button" @click="$store.dispatch('nav/toggleSidebar')">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <div class="app-links">
+        <AppLinks></AppLinks>
+    </div>
   </nav>
 </template>
 
 <script>
+import AppLinks from '~/components/global/AppLinks'
 export default {
-  name: 'Header'
+  name: 'Header',
+  components: { AppLinks }
 }
 </script>
 
@@ -61,5 +64,33 @@ export default {
 @keyframes fadeIn2 {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+.drawer-toggle .bar {
+  width: 90%;
+  height: 2px;
+  background-color: var(--color-primary);
+}
+.drawer-toggle {
+  display: flex;
+  justify-self: end;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 16px;
+  width: 30px;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .app-links {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .app-links {
+    display: block;
+  }
+  .drawer-toggle {
+    display: none;
+  }
 }
 </style>

@@ -1,14 +1,31 @@
 <template>
   <main>
-    <section class="self-center flex flex-col flex-1 items-center justify-center">
-      <h1 class="title text-center">Harian Bola</h1>
-      <span class="subtitle text-center text-lg font-normal">Update score sepak bola, dan informasi jadwal pertandingan liga eropa & Indonesia terlengkap, serta berita terbaru seputar Indonesia Raya.</span>
-    </section>
-
+    <carousel
+      class="index-carousel w-full mb-20"
+    />
     <section class="mt-8">
       <h3 class="text-primary-600 dark:text-primary-400 max-w-5xl mx-auto">Berita terkini</h3>
       <posts post-type="bola" :amount="6" />
     </section>
-    <a href="https://103.3.61.238/" class="w-full mt-2"><img src="/img/ad1.jpg" alt="JUDIBRO"></a>
+
+    <a href="https://103.3.61.238/?utm_medium=blog&utm_source=ads&utm_campaign=daily%20bola%20ads" class="self-center w-full md:w-1/2 mt-2">
+      <picture class="w-full">
+        <source srcset="/img/live22-euro-guess2win-desktop.jpg" media="(min-width: 500px)">
+        <img src="/img/live22-euro-guess2win.jpg" alt="JUDIBRO">
+      </picture>
+    </a>
   </main>
 </template>
+
+<script>
+import carousel from '~/components/posts/carousel.vue'
+export default {
+  components: { carousel },
+  
+}
+</script>
+<style scoped>
+.index-carousel{
+  max-height: 80vh;
+}
+</style>

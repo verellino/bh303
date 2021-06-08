@@ -7,7 +7,7 @@ gallery:
   ['https://www.aremanoid.com/img_berita/19ChelseaMadrid2.jpg', 'https://www.aremanoid.com/img_berita/1065407540.jpg']
 ---
 
-**Harianbola.com** – Chelsea membuktikan diri sekali lagi bahwa mereka adalah lawan yang sulit ditahlukan oleh Real Madrid. Hal tersebut nyata terlihat stelah mampu menahan imbang Madrid di Estadio Alfredo di Stefano. Kini pada leg kedua babak semifinal Liga Champions mereka sukses menundukkan klub peraih trophy terbanyak Liga Champions, Real Madrid .
+**dailybola.com** – Chelsea membuktikan diri sekali lagi bahwa mereka adalah lawan yang sulit ditahlukan oleh Real Madrid. Hal tersebut nyata terlihat stelah mampu menahan imbang Madrid di Estadio Alfredo di Stefano. Kini pada leg kedua babak semifinal Liga Champions mereka sukses menundukkan klub peraih trophy terbanyak Liga Champions, Real Madrid .
 
 Pada laga yang dilangsungkan pada beberapa jam yang lalu,Chelsea tampil dengan kekuatan terbaiknya. Berbanding terbalik dengan tim tamu yang tampil pincang dengan tidak diperkuat 2 pemain intinya, Dani Carvahal serta Raphael Varane yang mengalami cedera.
 

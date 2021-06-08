@@ -10,7 +10,7 @@ gallery:
   ]
 ---
 
-**Harianbola.com** – Sport Soccer06 Jun 21 | 21:48
+**dailybola.com.com** – Sport Soccer06 Jun 21 | 21:48
 5 Timnas dengan Skuad Terbaik di Turnamen Piala Eropa 2020, Mana Saja?
 Dari Timnas Inggris hingga Timnas Prancis
 
