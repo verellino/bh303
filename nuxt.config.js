@@ -24,7 +24,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: SITE_INFO.sitename || process.env.npm_package_name || 'Harian Bola - Berita terupdate tentang Sepakbola 2021',
+    title: SITE_INFO.sitename || process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -63,7 +63,7 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#526488' },
+  loading: { color: '##d69e2e' },
   /*
    ** Global CSS
    */
@@ -75,7 +75,7 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ['@nuxtjs/color-mode', '@nuxtjs/tailwindcss', '@nuxtjs/svg', '@nuxtjs/pwa'],
+  buildModules: ['@nuxtjs/color-mode', '@nuxtjs/tailwindcss', '@nuxtjs/svg', '@nuxtjs/pwa', '@nuxtjs/google-analytics'],
   /*
    ** Nuxt.js modules
    */
@@ -134,8 +134,8 @@ export default {
   },
   pwa: {
     icon: {
-      source: 'static/icon.png',
-      filename: 'icon.png'
+      source: 'static/ico.png',
+      filename: 'ico.png'
     },
     manifest: { name: SITE_INFO.sitename || process.env.npm_package_name || '', lang: process.env.lang },
     meta: {
@@ -144,5 +144,8 @@ export default {
       ogHost: process.env.URL,
       ogImage: '/preview.jpg'
     }
+  },
+  googleAnalytics: {
+    id: 'G-Q71VC0R43E'
   }
 }

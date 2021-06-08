@@ -1,7 +1,7 @@
 <template>
   <main>
     <carousel
-      class="index-carousel w-full mb-20"
+      class="index-carousel w-full mb-8"
     />
     <section class="mt-8">
       <h3 class="text-primary-600 dark:text-primary-400 max-w-5xl mx-auto">Berita terkini</h3>
@@ -25,7 +25,5 @@ export default {
 }
 </script>
 <style scoped>
-.index-carousel{
-  max-height: 80vh;
-}
+
 </style>

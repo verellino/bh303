@@ -14,10 +14,10 @@
                           class="carousel-img"
                           :src="post.cover"
                         >
-                        <span class="carousel-span pl-2 md:pl-8 pb-2" >
-                            <h6 class="inline-block py-1 px-2 mr-1 bg-gold-600 text-white text-sm font-medium rounded-sm">{{ post.category }}</h6>
-                            <h3 class="card-title">{{ post.title }}</h3>
-                            <p class="mt-2">{{ post.description }}</p>
+                        <span class="carousel-span px-3 md:px-8 pb-3 pt-4" >
+                            <h6 class="inline-block py-1 mr-1 bg-gold-600 text-white text-sm font-bold rounded-sm">{{ post.category }}</h6>
+                            <h3 class="card-title text-yellow-500">{{ post.title }}</h3>
+                            <p class="mt-2 text-white text-xs pl-1">{{ post.description }}</p>
                         </span>
                     </template>
 
@@ -48,7 +48,7 @@
     display: block;
     width: 100%;
     bottom: 0.2em;
-    background: linear-gradient(0deg, white, rgba(255, 255, 255, 0.05));
+    background: linear-gradient(0deg, black, rgba(255, 255, 255, 0.05));
 }
 .carousel-img{
     width: 100%;

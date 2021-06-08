@@ -33,7 +33,7 @@
     .sidenav {
         height: 100%;
         width: 300px;
-        background-color: #1c263b;
+        background-color: #f2f6ff;
         z-index: 10000;
         position: fixed;
         top: 0;
@@ -41,7 +41,7 @@
         box-sizing: border-box;
         padding: 30px;
     }
-    .sidenav li a {
+    .sidenav .nav-list .nav-item a {
         color: white;
     }
     .backdrop {
