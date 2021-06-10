@@ -48,7 +48,7 @@
     display: block;
     width: 100%;
     bottom: 0.2em;
-    background: linear-gradient(0deg, black, rgba(255, 255, 255, 0.05));
+    background: linear-gradient(0deg, black, rgba(255, 255, 255, 0));
 }
 .carousel-img{
     width: 100%;

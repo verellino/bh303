@@ -67,11 +67,11 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@/assets/css/main.pcss'],
+  css: ['@/assets/css/main.pcss', 'vue-slick-carousel/dist/vue-slick-carousel.css'],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/vue-content-placeholders.js'],
+  plugins: ['~/plugins/vue-content-placeholders.js', '~/plugins/vue-slick-carousel.js'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -146,6 +146,6 @@ export default {
     }
   },
   googleAnalytics: {
-    id: 'G-Q71VC0R43E'
+    id: 'UA-197766977-1'
   }
 }
